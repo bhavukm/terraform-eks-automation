@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend
+  namespace: three-tier
+spec:
+  containers:
+  - name: frontend
+    image: PLACEHOLDER_FRONTEND_IMAGE
+    ports:
+    - containerPort: 80
