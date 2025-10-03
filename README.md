@@ -1,5 +1,9 @@
 # terraform-eks-automation for VPC ECR and EKS
 
+**Architectural Diagram:**
+
+<img width="1280" height="720" alt="aws-eks-arch2" src="https://github.com/user-attachments/assets/45bbb355-fe28-4187-b2ba-86da7ea0a1e2" />
+
 **Problem Statement: Highlighting a Real World Problem:**
 
 A fast-growing startup is deploying a microservices-based web application on AWS. Initially, developers were manually building Docker images on their laptops, pushing them to a shared 
