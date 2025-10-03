@@ -18,7 +18,15 @@ The company needed a secure, automated, and scalable deployment workflow for its
 
 **Solution:**
 
-A single Terraform stack that builds a VPC with public and private subnets, NAT gateway, route tables (public and private), and security groups (bastion, application server).
+**A single Terraform stack that:**
+
+(A). Builds a Terraform module-based VPC with public and private subnets, a NAT gateway, route tables (public and private), and security groups (bastion, application server).
+
+(B). It also builds container images from Dockerfiles, provisions ECR Repositories, tags the container images, and updates them automatically in Kubernetes manifests.
+
+(C). It can also push container images to ECR repositories.
+
+(D). It can deploy an AWS EKS Cluster and then pull container images from ECR and deploy them as pods within the cluster.
 
 Resource Names include an environment suffix so the same code can be used for dev/stage/prod by swapping *.tfvars.
 
